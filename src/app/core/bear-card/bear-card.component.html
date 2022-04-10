@@ -1,0 +1,15 @@
+<h1 *ngIf="!enableButton">Search Result</h1>
+<ng-container *ngFor="let bear of bearData">
+    <div [class]="enableButton?'bearCard enableBorder':'bearCard'">
+        <h3 *ngIf="enableButton">{{bear.name}}</h3>
+        <img [src]="bear.image_url" [alt]="bear.tagline"/>
+        <div class="para">
+            <h3 *ngIf="!enableButton">{{bear.name}}</h3>
+            <p>{{bear.description}}</p>
+        </div>
+        <div *ngIf="enableButton" class="buttonContainer">
+            <button (click)="anotherHandler()">Another Bear</button>
+            <button (click)="nonAlcoholicHandler()">Random Non Alcoholic Beers</button>
+        </div>
+    </div>
+</ng-container>

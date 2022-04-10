@@ -1,0 +1,49 @@
+.bearCard{
+    margin-bottom: 10px;
+}
+img {
+  width: 30px;
+  border: 1px solid black;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+.para {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+  margin-right: 10px;
+  width: calc(100% - 62px);
+  box-sizing: border-box;
+}
+.enableBorder .para{    
+  width: calc(100% - 224px) !important;
+}
+.enableBorder {
+  border: 1px solid black;
+  display: block;
+  padding: 0 10px 10px 10px;
+}
+
+.buttonContainer {
+  display: inline-block;
+  width: 162px;
+  vertical-align: middle;
+}
+.buttonContainer > button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background: darkblue;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.buttonContainer > button:hover {
+  opacity: 0.75;
+}
+.buttonContainer > button:first-child {
+  margin-bottom: 10px;
+}

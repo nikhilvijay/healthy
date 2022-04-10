@@ -1,0 +1,5 @@
+<h1>Search</h1>
+<input type="text" [(ngModel)]="text" placeholder="Search">
+<input type="radio" value="name" [(ngModel)]="radio"/> Name
+<input type="radio" value="description" [(ngModel)]="radio"/> Description
+<button (click)="searchHandler()">Search</button>
